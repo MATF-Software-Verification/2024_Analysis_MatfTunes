@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2081927999">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/main.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/main.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/main.cpp" file="../matftunes/MatfTunes/src/songlibrary.h" line="24" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/main.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="6"/>
+    <functioncall functionName="AudioPlayerPage"/>
+    <functioncall functionName="MainPage"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistsPage"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Settings"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongLibPage"/>
+    <functioncall functionName="SongLibrary"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="argc"/>
+    <functioncall functionName="argv"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="exec"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="resize"/>
+    <functioncall functionName="settings"/>
+    <functioncall functionName="show"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="width"/>
+  </FileInfo>
+</analyzerinfo>

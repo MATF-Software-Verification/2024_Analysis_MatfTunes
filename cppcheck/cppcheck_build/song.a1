@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3364405638">
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Song::m_timesPlayed&apos; is not initialized in the constructor." verbose="Member variable &apos;Song::m_timesPlayed&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file="../matftunes/MatfTunes/src/song.cpp" line="8" column="7"/>
+            <symbol>Song::m_timesPlayed</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Song::m_duration&apos; is not initialized in the constructor." verbose="Member variable &apos;Song::m_duration&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file="../matftunes/MatfTunes/src/song.cpp" line="8" column="7"/>
+            <symbol>Song::m_duration</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Song::m_liked&apos; is not initialized in the constructor." verbose="Member variable &apos;Song::m_liked&apos; is not initialized in the constructor." cwe="398" inconclusive="true">
+            <location file="../matftunes/MatfTunes/src/song.cpp" line="8" column="7"/>
+            <symbol>Song::m_liked</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/song.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;setPathToImg&apos; argument 1 names different: declaration &apos;pathToImg&apos; definition &apos;new_path_to_img&apos;." verbose="Function &apos;setPathToImg&apos; argument 1 names different: declaration &apos;pathToImg&apos; definition &apos;new_path_to_img&apos;." cwe="628" inconclusive="true">
+            <location file="../matftunes/MatfTunes/src/song.cpp" line="59" column="33"/>
+            <location file0="../matftunes/MatfTunes/src/song.cpp" file="../matftunes/MatfTunes/src/song.h" line="26" column="31"/>
+            <symbol>setPathToImg</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setName" lineNumber="38"/>
+    <functiondecl functionName="setArtist" lineNumber="48"/>
+    <functiondecl functionName="setPathToImg" lineNumber="59"/>
+    <functiondecl functionName="setLyrics" lineNumber="64"/>
+    <functiondecl functionName="incrementTimesPlayed" lineNumber="68"/>
+    <functiondecl functionName="like" lineNumber="72"/>
+    <functiondecl functionName="toVariant" lineNumber="78"/>
+    <functiondecl functionName="fromVariant" lineNumber="93"/>
+    <functioncall functionName="ID3v2Tag"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="audioProperties"/>
+    <functioncall functionName="constData"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="fromStdString"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="lengthInSeconds"/>
+    <functioncall functionName="lyrics"/>
+    <functioncall functionName="m_artist"/>
+    <functioncall functionName="m_duration"/>
+    <functioncall functionName="m_liked"/>
+    <functioncall functionName="m_lyrics"/>
+    <functioncall functionName="m_name"/>
+    <functioncall functionName="m_path"/>
+    <functioncall functionName="m_path_to_img"/>
+    <functioncall functionName="m_timesPlayed"/>
+    <functioncall functionName="mpegFile"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="new_path_to_img"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="save"/>
+    <functioncall functionName="setArtist"/>
+    <functioncall functionName="setTitle"/>
+    <functioncall functionName="title"/>
+    <functioncall functionName="to8Bit"/>
+    <functioncall functionName="toBool"/>
+    <functioncall functionName="toMap"/>
+    <functioncall functionName="toStdString"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="toUInt"/>
+    <functioncall functionName="toUtf8"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

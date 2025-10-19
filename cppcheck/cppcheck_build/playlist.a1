@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="875005843">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_name&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_name&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file="../matftunes/MatfTunes/src/playlist.cpp" line="8" column="5"/>
+            <symbol>m_name</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlist.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlist.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/playlist.cpp" file="../matftunes/MatfTunes/src/songlibrary.h" line="24" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/playlist.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;map&apos; shadows outer variable" verbose="Local variable &apos;map&apos; shadows outer variable" cwe="398">
+            <location file="../matftunes/MatfTunes/src/playlist.cpp" line="102" column="21" info="Shadow variable"/>
+            <location file="../matftunes/MatfTunes/src/playlist.cpp" line="95" column="17" info="Shadowed declaration"/>
+            <symbol>map</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;map&apos; shadows outer variable" verbose="Local variable &apos;map&apos; shadows outer variable" cwe="398">
+            <location file="../matftunes/MatfTunes/src/playlist.cpp" line="120" column="21" info="Shadow variable"/>
+            <location file="../matftunes/MatfTunes/src/playlist.cpp" line="113" column="17" info="Shadowed declaration"/>
+            <symbol>map</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="currentSong" lineNumber="18"/>
+    <functiondecl functionName="addSong" lineNumber="26"/>
+    <functiondecl functionName="removeSong" lineNumber="35"/>
+    <functiondecl functionName="setCurrentIndex" lineNumber="44"/>
+    <functiondecl functionName="changeName" lineNumber="49"/>
+    <functiondecl functionName="changeCover" lineNumber="53"/>
+    <functiondecl functionName="next" lineNumber="57"/>
+    <functiondecl functionName="previous" lineNumber="66"/>
+    <functiondecl functionName="shuffle" lineNumber="76"/>
+    <functiondecl functionName="toVariant" lineNumber="93"/>
+    <functiondecl functionName="fromVariant" lineNumber="110"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongLibrary"/>
+    <functioncall functionName="addSong"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="bounded"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="global"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="m_cover_path"/>
+    <functioncall functionName="m_currentIndex"/>
+    <functioncall functionName="m_name"/>
+    <functioncall functionName="m_songs"/>
+    <functioncall functionName="map"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="newIndex"/>
+    <functioncall functionName="numOfSongs"/>
+    <functioncall functionName="numberOfSongs"/>
+    <functioncall functionName="out_of_range"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="songLibrary"/>
+    <functioncall functionName="toList"/>
+    <functioncall functionName="toMap"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="value"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1567913340">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/implicitplaylist.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/implicitplaylist.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/implicitplaylist.cpp" file="../matftunes/MatfTunes/src/implicitplaylist.h" line="10" column="5"/>
+            <symbol>ImplicitPlaylist</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="changeName" lineNumber="12"/>
+    <functiondecl functionName="changeCover" lineNumber="16"/>
+    <functioncall functionName="ImplicitPlaylist"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="logic_error"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="override"/>
+  </FileInfo>
+</analyzerinfo>

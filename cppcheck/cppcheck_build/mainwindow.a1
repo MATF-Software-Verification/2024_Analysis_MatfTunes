@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2018055443">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/src/implicitplaylist.h" line="10" column="5"/>
+            <symbol>ImplicitPlaylist</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/src/songlibrary.h" line="24" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/src/playlistlibrary.h" line="25" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/mainwindow.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:107:10" call-funcname="saveCurrPageAndSetNext" call-argnr="1" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="249" col="27" call-argexpr="Pages::MainPage" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:112:10" call-funcname="updateAllSongsPlaylist" call-argnr="2" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="482" col="31" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:87:10" call-funcname="changePlayerVisible" call-argnr="1" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="618" col="24" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:87:10" call-funcname="changePlayerVisible" call-argnr="1" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="668" col="28" call-argexpr="false" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:71:10" call-funcname="displaySong" call-argnr="1" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="444" col="5" my-id="../matftunes/MatfTunes/src/mainwindow.h:63:10" my-argnr="1"/>
+<function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:71:10" call-funcname="displaySong" call-argnr="3" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="444" col="5" my-id="../matftunes/MatfTunes/src/mainwindow.h:63:10" my-argnr="2"/>
+<function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:71:10" call-funcname="displaySong" call-argnr="3" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="451" col="9" my-id="../matftunes/MatfTunes/src/mainwindow.h:64:10" my-argnr="2"/>
+<function-call call-id="../matftunes/MatfTunes/src/mainwindow.h:71:10" call-funcname="displaySong" call-argnr="1" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="598" col="5" my-id="../matftunes/MatfTunes/src/mainwindow.h:81:10" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:102:10" my-argnr="1" my-argname="listWidget" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="146" col="12" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:109:10" my-argnr="1" my-argname="s" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="208" col="9" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:56:10" my-argnr="1" my-argname="pItem" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="363" col="41" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:57:10" my-argnr="1" my-argname="item" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="386" col="23" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:60:10" my-argnr="1" my-argname="playlist_item" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="420" col="58" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:61:10" my-argnr="1" my-argname="p" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="429" col="17" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:62:10" my-argnr="1" my-argname="s" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="438" col="5" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:67:10" my-argnr="1" my-argname="songItem" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="464" col="18" value="0"/>
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/mainwindow.h:68:10" my-argnr="1" my-argname="songItem" file="../matftunes/MatfTunes/src/mainwindow.cpp" line="490" col="18" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setupIcons" lineNumber="61"/>
+    <functiondecl functionName="setupPlayer" lineNumber="78"/>
+    <functiondecl functionName="setupMainPage" lineNumber="92"/>
+    <functiondecl functionName="setupSongLibPage" lineNumber="109"/>
+    <functiondecl functionName="setupPlaylistPage" lineNumber="122"/>
+    <functiondecl functionName="clearListWidget" lineNumber="145"/>
+    <functiondecl functionName="setupTopTracks" lineNumber="154"/>
+    <functiondecl functionName="reloadSongLibrary" lineNumber="170"/>
+    <functiondecl functionName="reloadPlaylists" lineNumber="179"/>
+    <functiondecl functionName="saveCurrPageAndSetNext" lineNumber="191"/>
+    <functiondecl functionName="showPlaylistCover" lineNumber="197"/>
+    <functiondecl functionName="addRemoveLiked" lineNumber="206"/>
+    <functiondecl functionName="getCurrentPlaylist" lineNumber="216"/>
+    <functiondecl functionName="setCurrentPlaylist" lineNumber="223"/>
+    <functiondecl functionName="reloadCurrentPlaylist" lineNumber="228"/>
+    <functiondecl functionName="backButton" lineNumber="247"/>
+    <functiondecl functionName="settingsButton" lineNumber="252"/>
+    <functiondecl functionName="songsMainPageButton" lineNumber="262"/>
+    <functiondecl functionName="playlistsMainPageButton" lineNumber="267"/>
+    <functiondecl functionName="addSongButton" lineNumber="272"/>
+    <functiondecl functionName="addPlaylistButton" lineNumber="295"/>
+    <functiondecl functionName="showCreateNewPlaylist" lineNumber="306"/>
+    <functiondecl functionName="hideCreateNewPlaylist" lineNumber="314"/>
+    <functiondecl functionName="saveNewPlaylist" lineNumber="323"/>
+    <functiondecl functionName="removeSongFromPlaylist" lineNumber="337"/>
+    <functiondecl functionName="refreshLikedShow" lineNumber="344"/>
+    <functiondecl functionName="removePlaylist" lineNumber="361"/>
+    <functiondecl functionName="showPlaylistSongs" lineNumber="382"/>
+    <functiondecl functionName="openLibrary" lineNumber="397"/>
+    <functiondecl functionName="playPlaylist" lineNumber="409"/>
+    <functiondecl functionName="editPlaylist" lineNumber="418"/>
+    <functiondecl functionName="updatePlaylistDetails" lineNumber="427"/>
+    <functiondecl functionName="receiveLike" lineNumber="436"/>
+    <functiondecl functionName="receiveSong" lineNumber="442"/>
+    <functiondecl functionName="receiveSongs" lineNumber="447"/>
+    <functiondecl functionName="removeSong" lineNumber="462"/>
+    <functiondecl functionName="editSong" lineNumber="488"/>
+    <functiondecl functionName="displaySong" lineNumber="508"/>
+    <functiondecl functionName="displayPlaylist" lineNumber="528"/>
+    <functiondecl functionName="filterSongItemUI" lineNumber="548"/>
+    <functiondecl functionName="filterPlaylistItemUI" lineNumber="562"/>
+    <functiondecl functionName="searchSongsChangeUI" lineNumber="586"/>
+    <functiondecl functionName="searchPlaylistsChangeUI" lineNumber="591"/>
+    <functiondecl functionName="onThreadFinish" lineNumber="596"/>
+    <functiondecl functionName="searchLyrics" lineNumber="601"/>
+    <functiondecl functionName="closePlayer" lineNumber="616"/>
+    <functiondecl functionName="fullScreenPlayer" lineNumber="621"/>
+    <functiondecl functionName="changePlayerVisible" lineNumber="639"/>
+    <functiondecl functionName="updatePlayerSongInfo" lineNumber="655"/>
+    <functiondecl functionName="showSongLyrics" lineNumber="672"/>
+    <functiondecl functionName="updateAllSongsPlaylist" lineNumber="681"/>
+    <functioncall functionName="AlignCenter"/>
+    <functioncall functionName="AudioPlayerPage"/>
+    <functioncall functionName="EditPlaylistUI"/>
+    <functioncall functionName="EditSongUI"/>
+    <functioncall functionName="ExistingFiles"/>
+    <functioncall functionName="ImplicitPlaylist"/>
+    <functioncall functionName="KeepAspectRatio"/>
+    <functioncall functionName="MainPage"/>
+    <functioncall functionName="MainWindow"/>
+    <functioncall functionName="MusicLocation"/>
+    <functioncall functionName="NoSelection"/>
+    <functioncall functionName="PlayerItemUI"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistItemUI"/>
+    <functioncall functionName="PlaylistLibrary"/>
+    <functioncall functionName="PlaylistsPage"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QMainWindow"/>
+    <functioncall functionName="QSize"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Settings"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongItemUI"/>
+    <functioncall functionName="SongLibPage"/>
+    <functioncall functionName="SongLibrary"/>
+    <functioncall functionName="SongLibraryWindow"/>
+    <functioncall functionName="WindowModal"/>
+    <functioncall functionName="add"/>
+    <functioncall functionName="addItem"/>
+    <functioncall functionName="addPlaylist"/>
+    <functioncall functionName="addPlaylistButton"/>
+    <functioncall functionName="addPlaylistButtonMP"/>
+    <functioncall functionName="addRemoveLiked"/>
+    <functioncall functionName="addSong"/>
+    <functioncall functionName="addSongButton"/>
+    <functioncall functionName="addSongButtonMP"/>
+    <functioncall functionName="addSongViaPath"/>
+    <functioncall functionName="addWidget"/>
+    <functioncall functionName="add_song_button_songs"/>
+    <functioncall functionName="allSongs"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="backButton"/>
+    <functioncall functionName="back_button"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="btn_add_song"/>
+    <functioncall functionName="btn_create_new_playlist"/>
+    <functioncall functionName="btn_play_playlist"/>
+    <functioncall functionName="btn_save_new_playlist"/>
+    <functioncall functionName="changePlayerVisible"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="clearListWidget"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="closePlayer"/>
+    <functioncall functionName="close_player_signal"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="controller"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="cover"/>
+    <functioncall functionName="coverImgPix"/>
+    <functioncall functionName="coverPath"/>
+    <functioncall functionName="currPage"/>
+    <functioncall functionName="currentIndex"/>
+    <functioncall functionName="currentPlaylist"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="defaultDir"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deletePlaylistItem"/>
+    <functioncall functionName="deleteSongItem"/>
+    <functioncall functionName="deletedSong"/>
+    <functioncall functionName="dialog"/>
+    <functioncall functionName="displayPlaylist"/>
+    <functioncall functionName="displaySong"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="edit"/>
+    <functioncall functionName="editPlaylist"/>
+    <functioncall functionName="editSong"/>
+    <functioncall functionName="edit_playlist_item"/>
+    <functioncall functionName="edit_song_clicked"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="filterPlaylistItemUI"/>
+    <functioncall functionName="filterSongItemUI"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="fullScreenPlayer"/>
+    <functioncall functionName="full_screen"/>
+    <functioncall functionName="full_screen_signal"/>
+    <functioncall functionName="getCurrentPlaylist"/>
+    <functioncall functionName="getExistingDirectory"/>
+    <functioncall functionName="getOpenFileNames"/>
+    <functioncall functionName="h"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="hide"/>
+    <functioncall functionName="hideCreateNewPlaylist"/>
+    <functioncall functionName="hideForImplicit"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="isVisible"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="itemAt"/>
+    <functioncall functionName="itemWidget"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="like"/>
+    <functioncall functionName="liked"/>
+    <functioncall functionName="likedSongs"/>
+    <functioncall functionName="liked_song_signal"/>
+    <functioncall functionName="list"/>
+    <functioncall functionName="listItem"/>
+    <functioncall functionName="listWidgetItem"/>
+    <functioncall functionName="logoPix"/>
+    <functioncall functionName="lyric"/>
+    <functioncall functionName="lyrics"/>
+    <functioncall functionName="m_lastVisitedPage"/>
+    <functioncall functionName="m_playeritem"/>
+    <functioncall functionName="m_thread_handler"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="new_name"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="numberOfTopTracks"/>
+    <functioncall functionName="onThreadFinish"/>
+    <functioncall functionName="openLibrary"/>
+    <functioncall functionName="open_library"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="page"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="pathToImg"/>
+    <functioncall functionName="paths"/>
+    <functioncall functionName="pix"/>
+    <functioncall functionName="playPlaylist"/>
+    <functioncall functionName="player"/>
+    <functioncall functionName="playlist"/>
+    <functioncall functionName="playlistByName"/>
+    <functioncall functionName="playlistDeleted"/>
+    <functioncall functionName="playlistItem"/>
+    <functioncall functionName="playlistLibrary"/>
+    <functioncall functionName="playlistSongs"/>
+    <functioncall functionName="playlist_item"/>
+    <functioncall functionName="playlist_window"/>
+    <functioncall functionName="playlists"/>
+    <functioncall functionName="playlistsButton"/>
+    <functioncall functionName="playlistsMainPageButton"/>
+    <functioncall functionName="playlistsToShow"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="receiveLike"/>
+    <functioncall functionName="receiveSong"/>
+    <functioncall functionName="receiveSongs"/>
+    <functioncall functionName="refreshLiked"/>
+    <functioncall functionName="refreshLikedShow"/>
+    <functioncall functionName="reloadCurrentPlaylist"/>
+    <functioncall functionName="reloadPlaylists"/>
+    <functioncall functionName="reloadSongLibrary"/>
+    <functioncall functionName="removePlaylist"/>
+    <functioncall functionName="removeSong"/>
+    <functioncall functionName="removeSongFromPlaylist"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="row"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="saveCurrPageAndSetNext"/>
+    <functioncall functionName="saveNewPlaylist"/>
+    <functioncall functionName="savedSongChanges"/>
+    <functioncall functionName="saved_changes"/>
+    <functioncall functionName="scaled"/>
+    <functioncall functionName="searchLyrics"/>
+    <functioncall functionName="searchPlaylist"/>
+    <functioncall functionName="searchPlaylistButton"/>
+    <functioncall functionName="searchPlaylistsChangeUI"/>
+    <functioncall functionName="searchSong"/>
+    <functioncall functionName="searchSongsChangeUI"/>
+    <functioncall functionName="search_songs_button"/>
+    <functioncall functionName="setAlignment"/>
+    <functioncall functionName="setCurrentIndex"/>
+    <functioncall functionName="setCurrentPlaylist"/>
+    <functioncall functionName="setDefaultDir"/>
+    <functioncall functionName="setEnabled"/>
+    <functioncall functionName="setFileMode"/>
+    <functioncall functionName="setFixedSize"/>
+    <functioncall functionName="setHeight"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setIconSize"/>
+    <functioncall functionName="setItemWidget"/>
+    <functioncall functionName="setPixmap"/>
+    <functioncall functionName="setPlaylist"/>
+    <functioncall functionName="setSelectionMode"/>
+    <functioncall functionName="setSizeHint"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setVisible"/>
+    <functioncall functionName="setWidth"/>
+    <functioncall functionName="setWindowModality"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="settings"/>
+    <functioncall functionName="settingsButton"/>
+    <functioncall functionName="settings_button"/>
+    <functioncall functionName="setupIcons"/>
+    <functioncall functionName="setupMainPage"/>
+    <functioncall functionName="setupPlayer"/>
+    <functioncall functionName="setupPlaylistPage"/>
+    <functioncall functionName="setupSongLibPage"/>
+    <functioncall functionName="setupTopTracks"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="show"/>
+    <functioncall functionName="showCreateNewPlaylist"/>
+    <functioncall functionName="showLyricsButton"/>
+    <functioncall functionName="showPlaylistCover"/>
+    <functioncall functionName="showPlaylistSongs"/>
+    <functioncall functionName="showSongLyrics"/>
+    <functioncall functionName="sizeHint"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="songChanged"/>
+    <functioncall functionName="songChosen"/>
+    <functioncall functionName="songDeleted"/>
+    <functioncall functionName="songFound"/>
+    <functioncall functionName="songItem"/>
+    <functioncall functionName="songLibrary"/>
+    <functioncall functionName="songListWidget"/>
+    <functioncall functionName="songs"/>
+    <functioncall functionName="songsButton"/>
+    <functioncall functionName="songsMainPageButton"/>
+    <functioncall functionName="songsToShow"/>
+    <functioncall functionName="songs_chosen"/>
+    <functioncall functionName="startThreads"/>
+    <functioncall functionName="takeItem"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="textChanged"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="toInt"/>
+    <functioncall functionName="token"/>
+    <functioncall functionName="topNTracks"/>
+    <functioncall functionName="topTracksListWidget"/>
+    <functioncall functionName="topTracksSave"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="updateAllSongsPlaylist"/>
+    <functioncall functionName="updatePlayerSongInfo"/>
+    <functioncall functionName="updatePlaylistDetails"/>
+    <functioncall functionName="updateSongDetails"/>
+    <functioncall functionName="visible"/>
+    <functioncall functionName="w"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="widget"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="writableLocation"/>
+  </FileInfo>
+</analyzerinfo>

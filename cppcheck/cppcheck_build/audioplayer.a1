@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1035410591">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/audioplayer.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="../matftunes/MatfTunes/src/audioplayer.h:45:10" call-funcname="songChanged" call-argnr="1" file="../matftunes/MatfTunes/src/audioplayer.cpp" line="69" col="21" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="../matftunes/MatfTunes/src/audioplayer.h:22:10" call-funcname="setCurrentSong" call-argnr="1" file="../matftunes/MatfTunes/src/audioplayer.cpp" line="75" col="19" call-argexpr="s" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path file="../matftunes/MatfTunes/src/audioplayer.cpp" line="76" col="10" info="Assuming that condition 's!=nullptr' is not redundant"/>
+</function-call><function-call call-id="../matftunes/MatfTunes/src/audioplayer.h:22:10" call-funcname="setCurrentSong" call-argnr="1" file="../matftunes/MatfTunes/src/audioplayer.cpp" line="75" col="5" my-id="../matftunes/MatfTunes/src/audioplayer.h:15:10" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setCurrentSong" lineNumber="16"/>
+    <functiondecl functionName="player" lineNumber="32"/>
+    <functiondecl functionName="currentSong" lineNumber="37"/>
+    <functiondecl functionName="setVolume" lineNumber="41"/>
+    <functiondecl functionName="invertMuted" lineNumber="58"/>
+    <functiondecl functionName="stopPlaying" lineNumber="64"/>
+    <functiondecl functionName="playSong" lineNumber="74"/>
+    <functiondecl functionName="play" lineNumber="85"/>
+    <functiondecl functionName="pause" lineNumber="91"/>
+    <functiondecl functionName="setPosition" lineNumber="97"/>
+    <functiondecl functionName="positionChanged" lineNumber="103"/>
+    <functiondecl functionName="statusChanged" lineNumber="107"/>
+    <functiondecl functionName="setLoop" lineNumber="113"/>
+    <functioncall functionName="AudioPlayer"/>
+    <functioncall functionName="Infinite"/>
+    <functioncall functionName="MediaStatus"/>
+    <functioncall functionName="Once"/>
+    <functioncall functionName="QAudioOutput"/>
+    <functioncall functionName="QMediaPlayer"/>
+    <functioncall functionName="QUrl"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deleteLater"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fromLocalFile"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="incrementTimesPlayed"/>
+    <functioncall functionName="int64_t"/>
+    <functioncall functionName="invertMuted"/>
+    <functioncall functionName="isPlaying"/>
+    <functioncall functionName="log10"/>
+    <functioncall functionName="loop"/>
+    <functioncall functionName="loops"/>
+    <functioncall functionName="m_audioOutput"/>
+    <functioncall functionName="m_currentSong"/>
+    <functioncall functionName="m_muted"/>
+    <functioncall functionName="m_player"/>
+    <functioncall functionName="mediaStatusChanged"/>
+    <functioncall functionName="mutedChanged"/>
+    <functioncall functionName="naturalMin"/>
+    <functioncall functionName="newCurrentSong"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="pause"/>
+    <functioncall functionName="play"/>
+    <functioncall functionName="playing"/>
+    <functioncall functionName="position"/>
+    <functioncall functionName="positionChanged"/>
+    <functioncall functionName="positionUpdated"/>
+    <functioncall functionName="pow"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="setAudioOutput"/>
+    <functioncall functionName="setCurrentSong"/>
+    <functioncall functionName="setLoops"/>
+    <functioncall functionName="setMuted"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setSource"/>
+    <functioncall functionName="setVolume"/>
+    <functioncall functionName="songChanged"/>
+    <functioncall functionName="songFinished"/>
+    <functioncall functionName="source"/>
+    <functioncall functionName="statusChanged"/>
+    <functioncall functionName="stop"/>
+    <functioncall functionName="stopPlaying"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="volume"/>
+    <functioncall functionName="volumeLevel"/>
+  </FileInfo>
+</analyzerinfo>

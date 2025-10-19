@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2503693823">
+        <error id="constParameter" severity="style" msg="Parameter &apos;dir&apos; can be declared with const" verbose="Parameter &apos;dir&apos; can be declared with const" cwe="398">
+            <location file="../matftunes/MatfTunes/src/settings.cpp" line="22" column="39"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="settings" lineNumber="17"/>
+    <functiondecl functionName="setDefaultDir" lineNumber="22"/>
+    <functiondecl functionName="setHeight" lineNumber="28"/>
+    <functiondecl functionName="setWidth" lineNumber="32"/>
+    <functiondecl functionName="toVariant" lineNumber="36"/>
+    <functiondecl functionName="fromVariant" lineNumber="46"/>
+    <functioncall functionName="JsonSerializer"/>
+    <functioncall functionName="Settings"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="dir"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="h"/>
+    <functioncall functionName="insert"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="load"/>
+    <functioncall functionName="m_defaultDir"/>
+    <functioncall functionName="m_height"/>
+    <functioncall functionName="m_width"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="save"/>
+    <functioncall functionName="toMap"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="toUInt"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="w"/>
+  </FileInfo>
+</analyzerinfo>

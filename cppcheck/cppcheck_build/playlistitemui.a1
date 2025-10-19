@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2207043296">
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;m_icon_path&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_icon_path&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
+            <location file="../matftunes/MatfTunes/src/playlistitemui.cpp" line="14" column="5"/>
+            <symbol>m_icon_path</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistitemui.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistitemui.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistitemui.cpp" file="../matftunes/MatfTunes/src/implicitplaylist.h" line="10" column="5"/>
+            <symbol>ImplicitPlaylist</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="removePlaylist" lineNumber="44"/>
+    <functiondecl functionName="edit_playlist" lineNumber="49"/>
+    <functiondecl functionName="edit_playlist_name" lineNumber="54"/>
+    <functiondecl functionName="set_playlist_icon" lineNumber="59"/>
+    <functiondecl functionName="hideForImplicit" lineNumber="65"/>
+    <functioncall functionName="AlignCenter"/>
+    <functioncall functionName="ImplicitPlaylist"/>
+    <functioncall functionName="KeepAspectRatio"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistItemUI"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="QWidget"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="coverPath"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="deletePlaylistItem"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="editPlBtn"/>
+    <functioncall functionName="edit_playlist"/>
+    <functioncall functionName="edit_playlist_item"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="hide"/>
+    <functioncall functionName="hideForImplicit"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="m_playlist"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="new_path"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pix"/>
+    <functioncall functionName="removePlaylist"/>
+    <functioncall functionName="rmPlBtn"/>
+    <functioncall functionName="scaled"/>
+    <functioncall functionName="setAlignment"/>
+    <functioncall functionName="setFixedSize"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setPixmap"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="width"/>
+  </FileInfo>
+</analyzerinfo>

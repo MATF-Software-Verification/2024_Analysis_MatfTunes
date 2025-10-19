@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3952227626">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistlibrary.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistlibrary.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistlibrary.cpp" file="../matftunes/MatfTunes/src/implicitplaylist.h" line="10" column="5"/>
+            <symbol>ImplicitPlaylist</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/playlistlibrary.cpp" file="../matftunes/MatfTunes/src/playlistlibrary.h" line="25" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/playlistlibrary.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="playlistLibrary" lineNumber="7"/>
+    <functiondecl functionName="addPlaylist" lineNumber="23"/>
+    <functiondecl functionName="addPlaylist" lineNumber="27"/>
+    <functiondecl functionName="removePlaylist" lineNumber="40"/>
+    <functiondecl functionName="playlists" lineNumber="51"/>
+    <functiondecl functionName="playlistByName" lineNumber="63"/>
+    <functiondecl functionName="toVariant" lineNumber="74"/>
+    <functiondecl functionName="fromVariant" lineNumber="85"/>
+    <functiondecl functionName="savePlaylists" lineNumber="102"/>
+    <functiondecl functionName="loadPlaylists" lineNumber="108"/>
+    <functioncall functionName="ImplicitPlaylist"/>
+    <functioncall functionName="JsonSerializer"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistLibrary"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="addPlaylist"/>
+    <functioncall functionName="all"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="fromVariant"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="isEmpty"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="liked"/>
+    <functioncall functionName="list_p"/>
+    <functioncall functionName="load"/>
+    <functioncall functionName="loadPlaylists"/>
+    <functioncall functionName="m_playlists"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="number"/>
+    <functioncall functionName="numberOfPlaylists"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="playlist"/>
+    <functioncall functionName="playlistLibrary"/>
+    <functioncall functionName="playlists"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="save"/>
+    <functioncall functionName="savePlaylists"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="toList"/>
+    <functioncall functionName="toLower"/>
+    <functioncall functionName="toVariant"/>
+  </FileInfo>
+</analyzerinfo>

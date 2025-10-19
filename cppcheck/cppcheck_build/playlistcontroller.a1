@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3638699890">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistcontroller.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playlistcontroller.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="controller" lineNumber="10"/>
+    <functiondecl functionName="setPlaylist" lineNumber="16"/>
+    <functiondecl functionName="unsetPlaylist" lineNumber="22"/>
+    <functiondecl functionName="playPlaylist" lineNumber="29"/>
+    <functiondecl functionName="nextSong" lineNumber="38"/>
+    <functiondecl functionName="previousSong" lineNumber="50"/>
+    <functiondecl functionName="toggleShuffle" lineNumber="62"/>
+    <functiondecl functionName="songFinished" lineNumber="66"/>
+    <functiondecl functionName="playAtIndex" lineNumber="79"/>
+    <functiondecl functionName="playlistDeleted" lineNumber="88"/>
+    <functioncall functionName="AudioPlayer"/>
+    <functioncall functionName="MediaStatus"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistController"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="currentSong"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="int64_t"/>
+    <functioncall functionName="isPlaying"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="loops"/>
+    <functioncall functionName="m_shuffle"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="nextSong"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="numOfSongs"/>
+    <functioncall functionName="out_of_range"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="playSong"/>
+    <functioncall functionName="player"/>
+    <functioncall functionName="position"/>
+    <functioncall functionName="previous"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="setCurrentIndex"/>
+    <functioncall functionName="shuffle"/>
+    <functioncall functionName="songFinished"/>
+    <functioncall functionName="stopPlaying"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="unsetPlaylist"/>
+    <functioncall functionName="volume"/>
+  </FileInfo>
+</analyzerinfo>

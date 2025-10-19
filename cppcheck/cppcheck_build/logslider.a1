@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3060048714">
+        <error id="funcArgNamesDifferent" severity="style" msg="Function &apos;setNaturalValue&apos; argument 1 names different: declaration &apos;value&apos; definition &apos;val&apos;." verbose="Function &apos;setNaturalValue&apos; argument 1 names different: declaration &apos;value&apos; definition &apos;val&apos;." cwe="628" inconclusive="true">
+            <location file="../matftunes/MatfTunes/src/logslider.cpp" line="26" column="40"/>
+            <location file0="../matftunes/MatfTunes/src/logslider.cpp" file="../matftunes/MatfTunes/src/logslider.h" line="14" column="31"/>
+            <symbol>setNaturalValue</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setNaturalMin" lineNumber="16"/>
+    <functiondecl functionName="setNaturalMax" lineNumber="21"/>
+    <functiondecl functionName="setNaturalValue" lineNumber="26"/>
+    <functiondecl functionName="onValueChanged" lineNumber="31"/>
+    <functioncall functionName="Horizontal"/>
+    <functioncall functionName="LogSlider"/>
+    <functioncall functionName="QSlider"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="log10"/>
+    <functioncall functionName="m_scale"/>
+    <functioncall functionName="max"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="naturalValueChanged"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="onValueChanged"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="scale"/>
+    <functioncall functionName="setMaximum"/>
+    <functioncall functionName="setMinimum"/>
+    <functioncall functionName="setOrientation"/>
+    <functioncall functionName="setValue"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="val"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="valueChanged"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2161441878">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/songlibrary.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/songlibrary.cpp" file="../matftunes/MatfTunes/src/songlibrary.h" line="24" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/songlibrary.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="songs" lineNumber="10"/>
+    <functiondecl functionName="topNTracks" lineNumber="23"/>
+    <functiondecl functionName="songLibrary" lineNumber="51"/>
+    <functiondecl functionName="addSongViaPath" lineNumber="57"/>
+    <functiondecl functionName="addSong" lineNumber="69"/>
+    <functiondecl functionName="song" lineNumber="73"/>
+    <functiondecl functionName="removeSong" lineNumber="84"/>
+    <functiondecl functionName="removeAllSongs" lineNumber="98"/>
+    <functiondecl functionName="toVariant" lineNumber="105"/>
+    <functiondecl functionName="fromVariant" lineNumber="116"/>
+    <functiondecl functionName="saveSongs" lineNumber="133"/>
+    <functiondecl functionName="loadSongs" lineNumber="140"/>
+    <functioncall functionName="JsonSerializer"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongLibrary"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="clear"/>
+    <functioncall functionName="contains"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="fromVariant"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="is_open"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="list"/>
+    <functioncall functionName="load"/>
+    <functioncall functionName="loadSongs"/>
+    <functioncall functionName="m_songs"/>
+    <functioncall functionName="map"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="newSong"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="qDeleteAll"/>
+    <functioncall functionName="remove"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="save"/>
+    <functioncall functionName="saveSongs"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="songs"/>
+    <functioncall functionName="sort"/>
+    <functioncall functionName="static_cast"/>
+    <functioncall functionName="timesPlayed"/>
+    <functioncall functionName="toList"/>
+    <functioncall functionName="toLower"/>
+    <functioncall functionName="toStdString"/>
+    <functioncall functionName="toVariant"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,101 @@
+../matftunes/MatfTunes/src/song.h:10:5: style: Class 'Song' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Song(QString path);
+    ^
+../matftunes/MatfTunes/src/playlist.h:12:5: style: Class 'Playlist' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    Playlist(QString name);
+    ^
+../matftunes/MatfTunes/src/implicitplaylist.h:10:5: style: Class 'ImplicitPlaylist' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    ImplicitPlaylist(QString name);
+    ^
+../matftunes/MatfTunes/src/playlistlibrary.h:25:10: style: The function 'fromVariant' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+    void fromVariant(const QVariant &variant);
+         ^
+../matftunes/MatfTunes/serialization/serializable.h:12:18: note: Virtual function in base class
+    virtual void fromVariant(const QVariant &variant) = 0;
+                 ^
+../matftunes/MatfTunes/src/playlistlibrary.h:25:10: note: Function in derived class
+    void fromVariant(const QVariant &variant);
+         ^
+../matftunes/MatfTunes/src/logslider.cpp:26:40: style:inconclusive: Function 'setNaturalValue' argument 1 names different: declaration 'value' definition 'val'. [funcArgNamesDifferent]
+void LogSlider::setNaturalValue(double val)
+                                       ^
+../matftunes/MatfTunes/src/logslider.h:14:31: note: Function 'setNaturalValue' argument 1 names different: declaration 'value' definition 'val'.
+  void setNaturalValue(double value);
+                              ^
+../matftunes/MatfTunes/src/logslider.cpp:26:40: note: Function 'setNaturalValue' argument 1 names different: declaration 'value' definition 'val'.
+void LogSlider::setNaturalValue(double val)
+                                       ^
+../matftunes/MatfTunes/src/songlibrary.h:24:10: style: The function 'fromVariant' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+    void fromVariant(const QVariant &variant);
+         ^
+../matftunes/MatfTunes/serialization/serializable.h:12:18: note: Virtual function in base class
+    virtual void fromVariant(const QVariant &variant) = 0;
+                 ^
+../matftunes/MatfTunes/src/songlibrary.h:24:10: note: Function in derived class
+    void fromVariant(const QVariant &variant);
+         ^
+../matftunes/MatfTunes/src/playlist.cpp:8:5: performance: Variable 'm_name' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_name = "New Playlist";
+    ^
+../matftunes/MatfTunes/src/playlist.cpp:102:21: style: Local variable 'map' shadows outer variable [shadowVariable]
+        QVariantMap map;
+                    ^
+../matftunes/MatfTunes/src/playlist.cpp:95:17: note: Shadowed declaration
+    QVariantMap map;
+                ^
+../matftunes/MatfTunes/src/playlist.cpp:102:21: note: Shadow variable
+        QVariantMap map;
+                    ^
+../matftunes/MatfTunes/src/playlist.cpp:120:21: style: Local variable 'map' shadows outer variable [shadowVariable]
+        QVariantMap map = list[i].toMap();
+                    ^
+../matftunes/MatfTunes/src/playlist.cpp:113:17: note: Shadowed declaration
+    QVariantMap map = list[0].toMap();
+                ^
+../matftunes/MatfTunes/src/playlist.cpp:120:21: note: Shadow variable
+        QVariantMap map = list[i].toMap();
+                    ^
+../matftunes/MatfTunes/src/playlistitemui.cpp:14:5: performance: Variable 'm_icon_path' is assigned in constructor body. Consider performing initialization in initialization list. [useInitializationList]
+    m_icon_path = p->coverPath();
+    ^
+../matftunes/MatfTunes/src/settings.cpp:22:39: style: Parameter 'dir' can be declared with const [constParameter]
+void Settings::setDefaultDir(QString& dir) {
+                                      ^
+../matftunes/MatfTunes/src/song.cpp:8:7: warning:inconclusive: Member variable 'Song::m_timesPlayed' is not initialized in the constructor. [uninitMemberVar]
+Song::Song()
+      ^
+../matftunes/MatfTunes/src/song.cpp:8:7: warning:inconclusive: Member variable 'Song::m_duration' is not initialized in the constructor. [uninitMemberVar]
+Song::Song()
+      ^
+../matftunes/MatfTunes/src/song.cpp:8:7: warning:inconclusive: Member variable 'Song::m_liked' is not initialized in the constructor. [uninitMemberVar]
+Song::Song()
+      ^
+../matftunes/MatfTunes/src/song.cpp:59:33: style:inconclusive: Function 'setPathToImg' argument 1 names different: declaration 'pathToImg' definition 'new_path_to_img'. [funcArgNamesDifferent]
+void Song::setPathToImg(QString new_path_to_img)
+                                ^
+../matftunes/MatfTunes/src/song.h:26:31: note: Function 'setPathToImg' argument 1 names different: declaration 'pathToImg' definition 'new_path_to_img'.
+    void setPathToImg(QString pathToImg);
+                              ^
+../matftunes/MatfTunes/src/song.cpp:59:33: note: Function 'setPathToImg' argument 1 names different: declaration 'pathToImg' definition 'new_path_to_img'.
+void Song::setPathToImg(QString new_path_to_img)
+                                ^
+../matftunes/MatfTunes/src/songitemui.h:37:22: style:inconclusive: Member variable 'SongItemUI::m_list_item' is in the wrong place in the initializer list. [initializerList]
+    QListWidgetItem* m_list_item;
+                     ^
+../matftunes/MatfTunes/src/songitemui.cpp:13:7: note: Member variable 'SongItemUI::m_list_item' is in the wrong place in the initializer list.
+    , m_list_item(list_item)
+      ^
+../matftunes/MatfTunes/src/songitemui.h:37:22: note: Member variable 'SongItemUI::m_list_item' is in the wrong place in the initializer list.
+    QListWidgetItem* m_list_item;
+                     ^
+../matftunes/MatfTunes/src/songlibrarywindow.cpp:81:11: style: The scope of the variable 'current_song' can be reduced. [variableScope]
+    Song *current_song;
+          ^
+../matftunes/MatfTunes/src/songlibrary.cpp:98:0: style: The function 'removeAllSongs' is never used. [unusedFunction]
+
+^
+../matftunes/MatfTunes/src/lyricssearchthread.cpp:9:0: style: The function 'run' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+

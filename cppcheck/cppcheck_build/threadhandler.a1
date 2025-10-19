@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1985695327">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/threadhandler.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/threadhandler.cpp" file="../matftunes/MatfTunes/src/songlibrary.h" line="24" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/threadhandler.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="startThreads" lineNumber="7"/>
+    <functiondecl functionName="onThreadFinish" lineNumber="20"/>
+    <functioncall functionName="LyricsSearchThread"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongLibrary"/>
+    <functioncall functionName="ThreadHandler"/>
+    <functioncall functionName="append"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deleteLater"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="finished"/>
+    <functioncall functionName="finishedSearch"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="lyric"/>
+    <functioncall functionName="nit"/>
+    <functioncall functionName="niti"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="onThreadFinish"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="songFound"/>
+    <functioncall functionName="songLibrary"/>
+    <functioncall functionName="songs"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="wait"/>
+  </FileInfo>
+</analyzerinfo>

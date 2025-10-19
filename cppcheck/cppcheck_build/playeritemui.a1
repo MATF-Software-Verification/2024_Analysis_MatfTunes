@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="933705755">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playeritemui.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/playeritemui.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="../matftunes/MatfTunes/src/playeritemui.h:59:10" my-argnr="1" my-argname="s" file="../matftunes/MatfTunes/src/playeritemui.cpp" line="109" col="17" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setupIcons" lineNumber="33"/>
+    <functiondecl functionName="connectButtons" lineNumber="54"/>
+    <functiondecl functionName="connectSlots" lineNumber="68"/>
+    <functiondecl functionName="updateData" lineNumber="87"/>
+    <functiondecl functionName="setSongDetails" lineNumber="106"/>
+    <functiondecl functionName="play_pause" lineNumber="115"/>
+    <functiondecl functionName="closePlayer" lineNumber="129"/>
+    <functiondecl functionName="updatePosition" lineNumber="136"/>
+    <functiondecl functionName="updateMovedPosition" lineNumber="143"/>
+    <functiondecl functionName="muteClicked" lineNumber="151"/>
+    <functiondecl functionName="next" lineNumber="161"/>
+    <functiondecl functionName="previous" lineNumber="165"/>
+    <functiondecl functionName="shuffle" lineNumber="169"/>
+    <functiondecl functionName="loops" lineNumber="180"/>
+    <functiondecl functionName="full_screen_player" lineNumber="191"/>
+    <functiondecl functionName="like_song" lineNumber="208"/>
+    <functiondecl functionName="changeAudioIcon" lineNumber="220"/>
+    <functiondecl functionName="songDeleted" lineNumber="229"/>
+    <functiondecl functionName="updateSongDetails" lineNumber="235"/>
+    <functioncall functionName="AlignCenter"/>
+    <functioncall functionName="AudioPlayer"/>
+    <functioncall functionName="KeepAspectRatio"/>
+    <functioncall functionName="LogSlider"/>
+    <functioncall functionName="MediaStatus"/>
+    <functioncall functionName="PlayerItemUI"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QWidget"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="changeAudioIcon"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="closePlayer"/>
+    <functioncall functionName="close_player_signal"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="connectButtons"/>
+    <functioncall functionName="connectSlots"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="controller"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="duration"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fromMSecsSinceStartOfDay"/>
+    <functioncall functionName="full_screen_button"/>
+    <functioncall functionName="full_screen_player"/>
+    <functioncall functionName="full_screen_signal"/>
+    <functioncall functionName="heart_button"/>
+    <functioncall functionName="horizontalLayout_2"/>
+    <functioncall functionName="horizontalLayout_6"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="int64_t"/>
+    <functioncall functionName="invertMuted"/>
+    <functioncall functionName="isPlaying"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="like_song"/>
+    <functioncall functionName="liked"/>
+    <functioncall functionName="liked_song_signal"/>
+    <functioncall functionName="loopChanged"/>
+    <functioncall functionName="loop_button"/>
+    <functioncall functionName="loops"/>
+    <functioncall functionName="m_current_song"/>
+    <functioncall functionName="m_full_screen"/>
+    <functioncall functionName="m_loop"/>
+    <functioncall functionName="m_muted"/>
+    <functioncall functionName="m_playing"/>
+    <functioncall functionName="m_shuffle"/>
+    <functioncall functionName="muteClicked"/>
+    <functioncall functionName="muted"/>
+    <functioncall functionName="mutedChanged"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="naturalValueChanged"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="nextSong"/>
+    <functioncall functionName="next_button"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="pathToImg"/>
+    <functioncall functionName="pause"/>
+    <functioncall functionName="pix"/>
+    <functioncall functionName="play"/>
+    <functioncall functionName="play_pause"/>
+    <functioncall functionName="play_stop_button"/>
+    <functioncall functionName="player"/>
+    <functioncall functionName="position"/>
+    <functioncall functionName="positionChanged"/>
+    <functioncall functionName="positionUpdated"/>
+    <functioncall functionName="previous"/>
+    <functioncall functionName="previousSong"/>
+    <functioncall functionName="previous_button"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="scaled"/>
+    <functioncall functionName="setAlignment"/>
+    <functioncall functionName="setAutoFillBackground"/>
+    <functioncall functionName="setFixedSize"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setLoop"/>
+    <functioncall functionName="setMaximum"/>
+    <functioncall functionName="setNaturalMax"/>
+    <functioncall functionName="setNaturalMin"/>
+    <functioncall functionName="setNaturalValue"/>
+    <functioncall functionName="setPixmap"/>
+    <functioncall functionName="setPosition"/>
+    <functioncall functionName="setSongDetails"/>
+    <functioncall functionName="setStretchFactor"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setValue"/>
+    <functioncall functionName="setVisible"/>
+    <functioncall functionName="setVolume"/>
+    <functioncall functionName="setupIcons"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="shuffle"/>
+    <functioncall functionName="shuffle_button"/>
+    <functioncall functionName="sliderMoved"/>
+    <functioncall functionName="slider_widget"/>
+    <functioncall functionName="songChanged"/>
+    <functioncall functionName="song_slider"/>
+    <functioncall functionName="stopPlaying"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="toggleShuffle"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="unsetPlaylist"/>
+    <functioncall functionName="updateData"/>
+    <functioncall functionName="updateMovedPosition"/>
+    <functioncall functionName="updatePosition"/>
+    <functioncall functionName="verticalLayout_2"/>
+    <functioncall functionName="volume"/>
+    <functioncall functionName="volume_button"/>
+    <functioncall functionName="volume_slider"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x_button"/>
+  </FileInfo>
+</analyzerinfo>

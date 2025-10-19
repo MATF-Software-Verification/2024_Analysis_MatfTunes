@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2435676534">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/editsongui.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/editsongui.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setupUI" lineNumber="27"/>
+    <functiondecl functionName="change_icon" lineNumber="38"/>
+    <functiondecl functionName="save_changes" lineNumber="43"/>
+    <functioncall functionName="EditSongUI"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QMainWindow"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="artistEdit"/>
+    <functioncall functionName="artistLabel"/>
+    <functioncall functionName="change_icon"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="coverEdit"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="getOpenFileName"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="lyrics"/>
+    <functioncall functionName="m_song"/>
+    <functioncall functionName="m_songItem"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nameEdit"/>
+    <functioncall functionName="nameLabel"/>
+    <functioncall functionName="newPathToImg"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="saveChanges"/>
+    <functioncall functionName="save_changes"/>
+    <functioncall functionName="savedSongChanges"/>
+    <functioncall functionName="setArtist"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setLyrics"/>
+    <functioncall functionName="setName"/>
+    <functioncall functionName="setPathToImg"/>
+    <functioncall functionName="setStretchFactor"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="setupUI"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="songItem"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="updateSongDetails"/>
+  </FileInfo>
+</analyzerinfo>

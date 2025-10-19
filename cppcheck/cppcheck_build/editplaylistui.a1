@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2279856700">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/editplaylistui.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/editplaylistui.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ImplicitPlaylist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/editplaylistui.cpp" file="../matftunes/MatfTunes/src/implicitplaylist.h" line="10" column="5"/>
+            <symbol>ImplicitPlaylist</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;fromVariant&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="../matftunes/MatfTunes/src/editplaylistui.cpp" file="../matftunes/MatfTunes/src/playlistlibrary.h" line="25" column="10" info="Function in derived class"/>
+            <location file0="../matftunes/MatfTunes/src/editplaylistui.cpp" file="../matftunes/MatfTunes/serialization/serializable.h" line="12" column="18" info="Virtual function in base class"/>
+            <symbol>fromVariant</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="setupUI" lineNumber="25"/>
+    <functiondecl functionName="change_icon" lineNumber="31"/>
+    <functiondecl functionName="save_edited_playlist" lineNumber="36"/>
+    <functioncall functionName="EditPlaylistUI"/>
+    <functioncall functionName="ImplicitPlaylist"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="PlaylistLibrary"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QMainWindow"/>
+    <functioncall functionName="QString"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="btn_new_playlist_cover"/>
+    <functioncall functionName="btn_save_playlist"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="changeCover"/>
+    <functioncall functionName="changeName"/>
+    <functioncall functionName="change_icon"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="dynamic_cast"/>
+    <functioncall functionName="edit_playlist_name"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="getOpenFileName"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="m_playlist"/>
+    <functioncall functionName="m_playlist_item"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="newPathToImg"/>
+    <functioncall functionName="new_name"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="playlist"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="save_edited_playlist"/>
+    <functioncall functionName="saved_changes"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setWindowTitle"/>
+    <functioncall functionName="set_playlist_icon"/>
+    <functioncall functionName="setupUI"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="text"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="tr"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="what"/>
+  </FileInfo>
+</analyzerinfo>

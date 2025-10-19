@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4253494973">
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/lyricssearchthread.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="../matftunes/MatfTunes/src/lyricssearchthread.h:16:10" call-funcname="finishedSearch" call-argnr="1" file="../matftunes/MatfTunes/src/lyricssearchthread.cpp" line="22" col="24" call-argexpr="nullptr" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="run" lineNumber="9"/>
+    <functiondecl functionName="zet" lineNumber="25"/>
+    <functioncall functionName="LyricsSearchThread"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="finishedSearch"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="l"/>
+    <functioncall functionName="lyrics"/>
+    <functioncall functionName="m_lyrics"/>
+    <functioncall functionName="m_song"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="override"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="song"/>
+    <functioncall functionName="song_lyrics"/>
+    <functioncall functionName="toLower"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="z"/>
+    <functioncall functionName="zet"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1539269441">
+        <error id="initializerList" severity="style" msg="Member variable &apos;SongItemUI::m_list_item&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;SongItemUI::m_list_item&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true">
+            <location file0="../matftunes/MatfTunes/src/songitemui.cpp" file="../matftunes/MatfTunes/src/songitemui.h" line="37" column="22"/>
+            <location file="../matftunes/MatfTunes/src/songitemui.cpp" line="13" column="7"/>
+            <symbol>SongItemUI::m_list_item</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Song&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/songitemui.cpp" file="../matftunes/MatfTunes/src/song.h" line="10" column="5"/>
+            <symbol>Song</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Playlist&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="../matftunes/MatfTunes/src/songitemui.cpp" file="../matftunes/MatfTunes/src/playlist.h" line="12" column="5"/>
+            <symbol>Playlist</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="updateSongDetails" lineNumber="50"/>
+    <functiondecl functionName="hideForImplicit" lineNumber="56"/>
+    <functiondecl functionName="changeIcon" lineNumber="62"/>
+    <functiondecl functionName="play_song" lineNumber="70"/>
+    <functiondecl functionName="remove_song" lineNumber="90"/>
+    <functiondecl functionName="edit_song" lineNumber="95"/>
+    <functioncall functionName="AudioPlayer"/>
+    <functioncall functionName="MediaStatus"/>
+    <functioncall functionName="Playlist"/>
+    <functioncall functionName="QBrush"/>
+    <functioncall functionName="QColor"/>
+    <functioncall functionName="QIcon"/>
+    <functioncall functionName="QWidget"/>
+    <functioncall functionName="Song"/>
+    <functioncall functionName="SongItemUI"/>
+    <functioncall functionName="artist"/>
+    <functioncall functionName="bool"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="changeIcon"/>
+    <functioncall functionName="clicked"/>
+    <functioncall functionName="connect"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="controller"/>
+    <functioncall functionName="currentSong"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="delete"/>
+    <functioncall functionName="deleteSongItem"/>
+    <functioncall functionName="duration"/>
+    <functioncall functionName="editButton"/>
+    <functioncall functionName="edit_song"/>
+    <functioncall functionName="edit_song_clicked"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="final"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fromMSecsSinceStartOfDay"/>
+    <functioncall functionName="hide"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="indexFromItem"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="int64_t"/>
+    <functioncall functionName="isPlaying"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="list"/>
+    <functioncall functionName="list_item"/>
+    <functioncall functionName="loops"/>
+    <functioncall functionName="m_list"/>
+    <functioncall functionName="m_list_item"/>
+    <functioncall functionName="m_playlist"/>
+    <functioncall functionName="m_song"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="objectName"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="playAtIndex"/>
+    <functioncall functionName="playButton"/>
+    <functioncall functionName="playSong"/>
+    <functioncall functionName="play_song"/>
+    <functioncall functionName="player"/>
+    <functioncall functionName="playlist"/>
+    <functioncall functionName="position"/>
+    <functioncall functionName="qDebug"/>
+    <functioncall functionName="removeButton"/>
+    <functioncall functionName="remove_song"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="row"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="setBackground"/>
+    <functioncall functionName="setIcon"/>
+    <functioncall functionName="setPlaylist"/>
+    <functioncall functionName="setStyleSheet"/>
+    <functioncall functionName="setText"/>
+    <functioncall functionName="setupUi"/>
+    <functioncall functionName="songChanged"/>
+    <functioncall functionName="songIndex"/>
+    <functioncall functionName="this"/>
+    <functioncall functionName="toString"/>
+    <functioncall functionName="ui"/>
+    <functioncall functionName="unsetPlaylist"/>
+    <functioncall functionName="volume"/>
+    <functioncall functionName="what"/>
+  </FileInfo>
+</analyzerinfo>
