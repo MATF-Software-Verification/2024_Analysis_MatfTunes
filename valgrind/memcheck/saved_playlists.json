@@ -1,0 +1,17 @@
+[
+    [
+        {
+            "name": "All songs",
+            "playlistCover": ":resources/matfTunes_LOGO_inv.png"
+        },
+        {
+            "path": "/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/resources/2.mp3"
+        }
+    ],
+    [
+        {
+            "name": "Liked Songs",
+            "playlistCover": ":resources/heart_full.png"
+        }
+    ]
+]
