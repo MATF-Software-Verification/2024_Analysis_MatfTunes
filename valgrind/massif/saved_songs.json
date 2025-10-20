@@ -1,0 +1,12 @@
+[
+    {
+        "artist": "Jeca",
+        "duration": 106,
+        "liked": true,
+        "lyrics": "Unknown",
+        "name": "Pesma2",
+        "path": "/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/resources/1.mp3",
+        "pathToImg": ":/resources/default_artist_img.jpg",
+        "timesPlayed": 3
+    }
+]
