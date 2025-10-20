@@ -21,6 +21,7 @@
 1. **cppcheck** 
 2. **clang-tidy**
 3. **valgrind - memcheck**
+4. **valgrind - massif**
 
 ## Tool 1: Cppcheck – Static Code Analysis
 **Tool purpose**:
@@ -29,8 +30,9 @@ It performs deep parsing of source files to identify code patterns that may indi
 **Scope of analysis**:
 The analysis was executed over the entire source directory: matftunes/MatfTunes/src/\
 **Command and configuration**:
-The following command was run automatically using the script cppcheck/run_cppcheck.sh: cppcheck --enable=all --inconclusive --std=c++17 --force \
-  --cppcheck-build-dir=cppcheck_build matftunes/MatfTunes/src/
+The following command was run automatically using the script cppcheck/run_cppcheck.sh: 
+<pre>cppcheck --enable=all --inconclusive --std=c++17 --force \
+--cppcheck-build-dir=cppcheck_build matftunes/MatfTunes/src/ </pre>
 **Cppcheck was configured to perform**:
 1. Full rule set analysis (--enable=all)
 2. Inconclusive and performance checks
@@ -73,8 +75,10 @@ The analysis was performed on the entire MatfTunes source code, using the compil
 **Scope of analysis**:
 Entire source directory: matftunes/MatfTunes/src/.\
 **Command and configuration**:
-Executed using the script clang-tidy/run_clang_tidy.sh: cmake -S ../matftunes/MatfTunes -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-clang-tidy *.cpp --warnings-as-errors=* --export-fixes=results/clang_tidy_fixes.yaml -p build > results/clang_tidy_report.txt
+Executed using the script clang-tidy/run_clang_tidy.sh: 
+<pre>cmake -S ../matftunes/MatfTunes -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+ clang-tidy *.cpp --warnings-as-errors=* --export-fixes=results/clang_tidy_fixes.yaml -p build > results/clang_tidy_report.txt </pre>
+
 <img width="935" height="476" alt="ScriptStartingScreenshot" src="https://github.com/user-attachments/assets/69668b20-7d66-4c25-8f71-fc5a4ee48f17" />
 
 
@@ -113,9 +117,10 @@ Valgrind (specifically the Memcheck tool) is used for dynamic memory analysis, d
 **Scope of analysis**:
 The analysis was executed over the entire source directory: matftunes/MatfTunes/build/Desktop-Debug/MatfTunes\
 **Command and configuration**:
-The following command was run automatically using the script memcheck/run_memcheck.sh: cvalgrind --tool=memcheck --leak-check=full --show-leak-kinds=all \
+The following command was run automatically using the script memcheck/run_memcheck.sh: 
+<pre> cvalgrind --tool=memcheck --leak-check=full --show-leak-kinds=all \
          --track-origins=yes --verbose \
-         --log-file=results/memcheck_<date>.log ../../matftunes/MatfTunes/build/Desktop-Debug/MatfTunes
+         --log-file=results/memcheck_<date>.log ../../matftunes/MatfTunes/build/Desktop-Debug/MatfTunes </pre>
 
 **Valgrind was configured to perform**:
 
@@ -145,18 +150,115 @@ Minor leaks in the SongLibrary component where newly created Song objects may no
 1. Use smart pointers for dynamically allocated objects.
 2. Review MainWindow and SongLibrary destructors for manual deallocation of heap-allocated entities.
 
+## Tool 4: Valgrind Massif – Memory Profiling
+**Tool purpose**:
+Valgrind Massif is a memory profiling tool that measures and visualizes heap memory usage over time during program execution.
+Unlike memcheck, which focuses on detecting memory leaks and invalid accesses, Massif tracks how much memory is allocated dynamically and helps identify functions or modules responsible for the largest memory consumption peaks.
+**Scope of analysis**:
+The analysis was executed over the entire source directory: matftunes/MatfTunes/build/Desktop-Debug/MatfTunes\
+**Command and configuration**:
+The following command was run automatically using the script massif/run_massif.sh: 
+<pre> valgrind --tool=massif --time-unit=B --stacks=yes \
+  --massif-out-file=./results/massif_2025-10-20_17-16.out "$PROJECT_PATH" </pre>
 
-## Repository Structure (current)
+**Massif was executed with the following configuration:**:
+1. --tool=massif → memory profiling (heap usage)
+2. --time-unit=B → time measured in bytes allocated
+3. --stacks=yes → includes stack allocations
+4. Output file: valgrind/massif/results/massif_<date>.out
+5. Visualized using ms_print and Massif Visualizer
+
+**Reports generated**:
+1. massif/results/massif_2025-10-20_17-16.out – raw profiling output
+2. Massif Visualizer graph (Massif Visualizer tool) – graphical visualization of memory usage snapshots over time
+
+
+**Results**:
+Massif Visualizer graph:
+<img width="1827" height="1049" alt="MassifScreenshot" src="https://github.com/user-attachments/assets/ed8cbdaa-bedd-487a-a854-aca7ccb867fb" />
+
+
+The Massif output and visual graph indicate the following:
+
+- Total number of snapshots: 54
+- Peak memory usage: 22.6 MiB (snapshot #25)
+- Main allocation sources:g_malloc() from the GLib library and Qt-related allocations (mostly QImage and QWidget initialization)
+- Memory usage grows gradually during application startup — particularly when graphical interface components and image resources are being loaded.
+- After reaching the peak at snapshot #25, the total heap size decreases and stabilizes, showing that memory is properly released once initialization is complete.
+- The report does not indicate memory leaks, but rather normal allocation patterns typical for Qt GUI applications.
+
+**Conclusions**:
+1. No memory leaks were detected — all major memory allocations correspond to normal GUI initialization and image processing.
+2. Peak heap usage (22.6 MiB) is within expected bounds for a multimedia desktop application.
+3. The memory footprint remains stable throughout execution, demonstrating proper memory management.
+
+
+**Recommendations**:
+ - For future scalability testing, re-run Massif with larger media libraries to ensure heap growth remains stable.
+
+
+## Repository Structure
+
+<pre> 
+.
+├── clang-tidy
+│   ├── build
+│   ├── llvm.sh
+│   ├── results
+│   │   ├── clang_tidy_fixes.yaml
+│   │   └── clang_tidy_report.txt
+│   ├── run_clang_tidy.sh
+│   └── ScriptStartingScreenshot.png
 ├── cppcheck
-├── .git
+│   ├── cppcheck_build
+│   ├── CppCheckScreenshot.png
+│   ├── html-report
+│   │   ├── 0.html
+│   │   ├── 10.html
+│   │   ├── 11.html
+│   │   ├── 12.html
+│   │   ├── 1.html
+│   │   ├── 2.html
+│   │   ├── 3.html
+│   │   ├── 4.html
+│   │   ├── 5.html
+│   │   ├── 6.html
+│   │   ├── 7.html
+│   │   ├── 8.html
+│   │   ├── 9.html
+│   │   ├── index.html
+│   │   ├── stats.html
+│   │   └── style.css
+│   ├── results
+│   │   ├── cppcheck_2025-10-20_00-02.txt
+│   │   ├── cppcheck_2025-10-20_00-04.txt
+│   │   ├── cppcheck_2025-10-20_00-07.txt
+│   │   └── cppcheck_2025-10-20_00-07.xml
+│   └── run_cppcheck.sh
+│   ├── modules
+│   │   └── matftunes
 ├── .github
 │   └── workflows
+│       ├── gate.yml
+│       └── tickets.yml
+├── .gitignore
 ├── .gitmodules
 ├── matftunes
 ├── ProjectAnalysisReport.md
+├── project_structure.txt
 ├── README.md
+└── valgrind
+    ├── massif
+    │   ├── MassifScreenshot.png
+    │   ├── results
+    │   │   └── massif_2025-10-20_17-16.out
+    │   ├── run_massif.sh
+    │   └── TerminalScreenshot.png
+    └── memcheck
+        ├── LeakSummaryScreenshot.png
+        ├── results
+        │   └── memcheck_2025-10-20_02-35.log
+        ├── run_memcheck.sh
 
-
-
-This report will be updated progressively
+</pre>
 
