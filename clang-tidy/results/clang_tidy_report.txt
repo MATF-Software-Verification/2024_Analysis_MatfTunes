@@ -1,0 +1,117 @@
+[1/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/audioplayer.cpp.
+[2/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/audioplayer.cpp.
+[3/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/editplaylistui.cpp.
+1 error generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/editplaylistui.cpp.
+[4/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/editsongui.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/editsongui.cpp.
+[5/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/implicitplaylist.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/implicitplaylist.cpp.
+[6/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/implicitplaylist.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/implicitplaylist.cpp.
+[7/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/logslider.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/logslider.cpp.
+[8/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/logslider.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/logslider.cpp.
+[9/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/lyricssearchthread.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/lyricssearchthread.cpp.
+[10/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/main.cpp.
+2 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/main.cpp.
+[11/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/mainwindow.cpp.
+3 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/mainwindow.cpp.
+[12/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playeritemui.cpp.
+4 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playeritemui.cpp.
+[13/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistcontroller.cpp.
+4 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistcontroller.cpp.
+[14/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistcontroller.cpp.
+4 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistcontroller.cpp.
+[15/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlist.cpp.
+4 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlist.cpp.
+[16/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlist.cpp.
+4 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlist.cpp.
+[17/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistitemui.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistitemui.cpp.
+[18/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistlibrary.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistlibrary.cpp.
+[19/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistlibrary.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/playlistlibrary.cpp.
+[20/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/settings.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/settings.cpp.
+[21/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/settings.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/settings.cpp.
+[22/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/song.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/song.cpp.
+[23/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/song.cpp.
+5 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/song.cpp.
+[24/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songitemui.cpp.
+6 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songitemui.cpp.
+[25/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrary.cpp.
+1 warning and 6 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrary.cpp.
+[26/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrary.cpp.
+2 warnings and 6 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrary.cpp.
+[27/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrarywindow.cpp.
+2 warnings and 7 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/songlibrarywindow.cpp.
+[28/19] Processing file /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/threadhandler.cpp.
+2 warnings and 7 errors generated.
+Error while processing /home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/threadhandler.cpp.
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editplaylistui.cpp:2:10: error: 'ui_editplaylistui.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_editplaylistui.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editsongui.cpp:2:10: error: 'ui_editsongui.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_editsongui.h"
+      |          ^~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/mainwindow.cpp:2:10: error: './ui_mainwindow.h' file not found [clang-diagnostic-error]
+    2 | #include "./ui_mainwindow.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playeritemui.cpp:2:10: error: 'ui_playeritemui.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_playeritemui.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playlistitemui.cpp:2:10: error: 'ui_playlistitemui.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_playlistitemui.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songitemui.cpp:2:10: error: 'ui_songitemui.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_songitemui.h"
+      |          ^~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp:62:16: error: Potential leak of memory pointed to by 'newSong' [clang-analyzer-cplusplus.NewDeleteLeaks,-warnings-as-errors]
+   62 |         return nullptr;
+      |                ^
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp:59:21: note: Memory is allocated
+   59 |     Song *newSong = new Song(path);
+      |                     ^~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp:61:9: note: Assuming the condition is true
+   61 |     if (song(path) != nullptr){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp:61:5: note: Taking true branch
+   61 |     if (song(path) != nullptr){
+      |     ^
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp:62:16: note: Potential leak of memory pointed to by 'newSong'
+   62 |         return nullptr;
+      |                ^
+/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrarywindow.cpp:2:10: error: 'ui_songlibrarywindow.h' file not found [clang-diagnostic-error]
+    2 | #include "ui_songlibrarywindow.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+1 warning treated as error

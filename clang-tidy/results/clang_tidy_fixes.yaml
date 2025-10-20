@@ -1,0 +1,121 @@
+---
+MainSourceFile:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/../matftunes/MatfTunes/src/audioplayer.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_editplaylistui.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editplaylistui.cpp'
+      FileOffset:      37
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editplaylistui.cpp'
+          FileOffset:      37
+          Length:          21
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_editsongui.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editsongui.cpp'
+      FileOffset:      33
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/editsongui.cpp'
+          FileOffset:      33
+          Length:          17
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''./ui_mainwindow.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/mainwindow.cpp'
+      FileOffset:      33
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/mainwindow.cpp'
+          FileOffset:      33
+          Length:          19
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_playeritemui.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playeritemui.cpp'
+      FileOffset:      35
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playeritemui.cpp'
+          FileOffset:      35
+          Length:          19
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_playlistitemui.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playlistitemui.cpp'
+      FileOffset:      37
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/playlistitemui.cpp'
+          FileOffset:      37
+          Length:          21
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_songitemui.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songitemui.cpp'
+      FileOffset:      33
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songitemui.cpp'
+          FileOffset:      33
+          Length:          17
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-analyzer-cplusplus.NewDeleteLeaks
+    DiagnosticMessage:
+      Message:         'Potential leak of memory pointed to by ''newSong'''
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+      FileOffset:      1346
+      Replacements:    []
+    Notes:
+      - Message:         Memory is allocated
+        FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+        FileOffset:      1282
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+            FileOffset:      1282
+            Length:          14
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+        FileOffset:      1307
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+            FileOffset:      1307
+            Length:          21
+      - Message:         Taking true branch
+        FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+        FileOffset:      1303
+        Replacements:    []
+      - Message:         'Potential leak of memory pointed to by ''newSong'''
+        FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrary.cpp'
+        FileOffset:      1346
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         '''ui_songlibrarywindow.h'' file not found'
+      FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrarywindow.cpp'
+      FileOffset:      40
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/anja/2024_Analysis_MatfTunes/matftunes/MatfTunes/src/songlibrarywindow.cpp'
+          FileOffset:      40
+          Length:          24
+    Level:           Error
+    BuildDirectory:  '/home/anja/2024_Analysis_MatfTunes/clang-tidy/build'
+...
