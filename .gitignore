@@ -1,0 +1,12 @@
+# Ignore build artifacts and binaries
+matftunes/MatfTunes/build/
+clang-tidy/build/
+cppcheck/cppcheck_build/
+cppcheck/html-report/
+valgrind/memcheck/results/
+*.o
+*.out
+*.a
+*.so
+*.exe
+*.bin
