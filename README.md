@@ -12,9 +12,7 @@
 - **Commit hash:** `ee68f33973bf1141c0e8e77be43bd7491eb92818`  
 
 **Opis projekta:**  
-*MatfTunes* je Qt aplikacija koja funkcioniše kao muzički plejer sa lokalnom bibliotekom pesama.  
-Korisnicima omogućava da uvezu pesme, uređuju metapodatke (naslov, izvođač, trajanje), lajkuju numere, formiraju i personalizuju plejlistu i pregledaju najčešće puštane pesme.  
-Takođe je omogućeno pretraživanje pesama i plejlisti, dodavanje tekstova pesama i filtriranje po njihovom sadržaju.
+*MatfTunes* predstavlja audio plejer sa svojom bibliotekom pesama. Pesme se prvo učitavaju u biblioteku pesama, odakle je nadalje moguće puštati pesme na različite načine, menjati svaku pesmu i njene informacije, lajkovati je kao i prikazati najčešće puštane pesme. Implementrirana je funkcionalnost kreiranja i personalizacije plejlisti kao i izlistavanja i puštanja lajkovanih pesama. Takođe je moguće pretražiti pesme odnosno plejliste, i dodati tekst svake pesme pa potom pretraživati pesme po njemu.
 
 ---
 
